@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="stylesheet.css">
+  
+    <title>BEMIS-SIS</title>
+  </head>
+
+  <body class="overlay-scrollbar">
+
+    <!-- Header -->
+<header class="header">
+  <div class="header-left">
+    <div class="logo">
+      BEMIS-SIS
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="header-links">
+      <a href="#" class="header-link">Settings</a>
+      <a href="#" class="header-link">More Info</a>
+      <div class="dropdown">
+        <button class="dropdown-toggle">Account</button>
+        <div class="dropdown-menu">
+          <a href="#">Profile</a>
+          <a href="#">Change Password</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    
+<!--sidebar-->
+<div class="sidebar">
+  <ul class="sidebar-nav">
+    <li class="sidebar-nav-item">
+      <a href="" class="sidebar-nav-link">
+        <div>
+          <i class="fa fa-tachometer"></i>
+        </div>
+        <span>Dashboard</span>
+      </a>
+    </li>
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-users"></i>
+        </div>
+        <span>Students</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Add Student</a></li>
+        <li><a href="#">Manage Students</a></li>
+        <li><a href="#">Student Grades</a></li>
+        <li><a href="#">Attendance</a></li>
+        <li><a href="#">Student Reports</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-user"></i>
+        </div>
+        <span>Teachers</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Add Teacher</a></li>
+        <li><a href="#">Manage Teachers</a></li>
+        <li><a href="#">Teacher Schedule</a></li>
+        <li><a href="#">Teacher Reports</a></li>
+        <li><a href="#">Teacher Performance</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-book"></i>
+        </div>
+        <span>Courses</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Add Course</a></li>
+        <li><a href="#">Manage Courses</a></li>
+        <li><a href="#">Course Schedule</a></li>
+        <li><a href="#">Course Reports</a></li>
+        <li><a href="#">Course Enrollment</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-calendar"></i>
+        </div>
+        <span>Calendar</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Academic Calendar</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Exam Schedule</a></li>
+        <li><a href="#">Holidays</a></li>
+        <li><a href="#">Reminders</a></li>
+      </ul>
+    </li>
+   
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-graduation-cap"></i>
+        </div>
+        <span>Grades</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Add Grade</a></li>
+        <li><a href="#">Manage Grades</a></li>
+        <li><a href="#">Grade Reports</a></li>
+        <li><a href="#">Grade Analysis</a></li>
+        <li><a href="#">Grade Notifications</a></li>
+      </ul>
+    </li>
+    
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-money"></i>
+        </div>
+        <span>Finance</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Fees Collection</a></li>
+        <li><a href="#">Expenses</a></li>
+        <li><a href="#">Financial Reports</a></li>
+        <li><a href="#">Budgeting</a></li>
+        <li><a href="#">Payments</a></li>
+      </ul>
+    </li>
+   
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-clipboard"></i>
+        </div>
+        <span>Exams</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Exam Schedule</a></li>
+        <li><a href="#">Results</a></li>
+        <li><a href="#">Exam Analysis</a></li>
+        <li><a href="#">Grading System</a></li>
+        <li><a href="#">Exam Notifications</a></li>
+      </ul>
+    </li>
+    
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-list-alt"></i>
+        </div>
+        <span>Attendance</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Student Attendance</a></li>
+        <li><a href="#">Teacher Attendance</a></li>
+        <li><a href="#">Attendance Reports</a></li>
+        <li><a href="#">Attendance Notifications</a></li>
+        <li><a href="#">Leave Management</a></li>
+      </ul>
+    </li>
+   
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-building"></i>
+        </div>
+        <span>Facilities</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Laboratories</a></li>
+        <li><a href="#">Sports Complex</a></li>
+        <li><a href="#">Cafeteria</a></li>
+        <li><a href="#">Auditorium</a></li>
+      </ul>
+    </li>
+  
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-bookmark"></i>
+        </div>
+        <span>Resources</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Textbooks</a></li>
+        <li><a href="#">Online Resources</a></li>
+        <li><a href="#">Educational Software</a></li>
+        <li><a href="#">Reference Materials</a></li>
+        <li><a href="#">Teaching Aids</a></li>
+      </ul>
+    </li>
+  
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-users"></i>
+        </div>
+        <span>Parents</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Parent-Teacher Meetings</a></li>
+        <li><a href="#">Parent Portal</a></li>
+        <li><a href="#">Parent Communication</a></li>
+        <li><a href="#">Parent Education</a></li>
+        <li><a href="#">Parent Feedback</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-briefcase"></i>
+        </div>
+        <span>Administration</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Staff Management</a></li>
+        <li><a href="#">Administrative Reports</a></li>
+        <li><a href="#">Policy Management</a></li>
+        <li><a href="#">Regulatory Compliance</a></li>
+        <li><a href="#">Internal Audits</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-lightbulb-o"></i>
+        </div>
+        <span>Learning Resources</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Educational Videos</a></li>
+        <li><a href="#">Interactive Learning</a></li>
+        <li><a href="#">Online Courses</a></li>
+        <li><a href="#">Educational Games</a></li>
+        <li><a href="#">Educational Projects</a></li>
+      </ul>
+    </li>
+
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-shield"></i>
+        </div>
+        <span>Safety & Security</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Emergency Procedures</a></li>
+        <li><a href="#">Security Personnel</a></li>
+        <li><a href="#">CCTV Surveillance</a></li>
+        <li><a href="#">Access Control</a></li>
+        <li><a href="#">Safety Inspections</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-globe"></i>
+        </div>
+        <span>International Programs</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Exchange Programs</a></li>
+        <li><a href="#">International Students</a></li>
+        <li><a href="#">Global Partnerships</a></li>
+        <li><a href="#">Multicultural Education</a></li>
+        <li><a href="#">Study Abroad</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-wrench"></i>
+        </div>
+        <span>Maintenance</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Facility Maintenance</a></li>
+        <li><a href="#">Equipment Maintenance</a></li>
+        <li><a href="#">Repairs</a></li>
+        <li><a href="#">Scheduled Maintenance</a></li>
+        <li><a href="#">Maintenance Logs</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-phone"></i>
+        </div>
+        <span>Communication</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Announcements</a></li>
+        <li><a href="#">Messaging</a></li>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="#">Alerts</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-trophy"></i>
+        </div>
+        <span>Achievements</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Student Awards</a></li>
+        <li><a href="#">Teacher Recognition</a></li>
+        <li><a href="#">Alumni Achievements</a></li>
+        <li><a href="#">School Accolades</a></li>
+        <li><a href="#">Community Recognition</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-clock-o"></i>
+        </div>
+        <span>Timetable</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Class Schedule</a></li>
+        <li><a href="#">Exam Timetable</a></li>
+        <li><a href="#">Teacher Availability</a></li>
+        <li><a href="#">Special Events Schedule</a></li>
+        <li><a href="#">Timetable Management</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-flag"></i>
+        </div>
+        <span>Discipline</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Incident Reporting</a></li>
+        <li><a href="#">Disciplinary Actions</a></li>
+        <li><a href="#">Behavioral Records</a></li>
+        <li><a href="#">Counseling Sessions</a></li>
+        <li><a href="#">Discipline Policy</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-check-square"></i>
+        </div>
+        <span>Tasks</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Task Management</a></li>
+        <li><a href="#">Assign Tasks</a></li>
+        <li><a href="#">Task Progress</a></li>
+        <li><a href="#">Task Reminders</a></li>
+        <li><a href="#">Task Notifications</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-comments"></i>
+        </div>
+        <span>Feedback</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Student Feedback</a></li>
+        <li><a href="#">Parent Feedback</a></li>
+        <li><a href="#">Teacher Feedback</a></li>
+        <li><a href="#">Course Feedback</a></li>
+        <li><a href="#">Feedback Analysis</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-question-circle"></i>
+        </div>
+        <span>Support</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Technical Support</a></li>
+        <li><a href="#">Contact Support</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-sitemap"></i>
+        </div>
+        <span>Integration</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">API Integration</a></li>
+        <li><a href="#">Third-party Integration</a></li>
+        <li><a href="#">Data Import/Export</a></li>
+        <li><a href="#">System Integration</a></li>
+        <li><a href="#">Integration Reports</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-bar-chart"></i>
+        </div>
+        <span>Analytics</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Student Performance</a></li>
+        <li><a href="#">Teacher Evaluation</a></li>
+        <li><a href="#">Course Analysis</a></li>
+        <li><a href="#">Financial Analytics</a></li>
+        <li><a href="#">Attendance Trends</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-users"></i>
+        </div>
+        <span>Community</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Parent Association</a></li>
+        <li><a href="#">Alumni Network</a></li>
+        <li><a href="#">Community Events</a></li>
+        <li><a href="#">Volunteer Programs</a></li>
+        <li><a href="#">Community Outreach</a></li>
+      </ul>
+    </li>
+    <!-- Add more features -->
+    <li class="sidebar-nav-item dropdown">
+      <a href="#" class="sidebar-nav-link dropdown-toggle">
+        <div>
+          <i class="fa fa-file-text-o"></i>
+        </div>
+        <span>Documentation</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">User Manuals</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Guides</a></li>
+        <li><a href="#">Policy Documents</a></li>
+        <li><a href="#">Technical Documentation</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<!--end of sidebar-->
+<script src="main.js"></script>
+  </body>
+</html>
